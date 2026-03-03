@@ -5,10 +5,10 @@ class UserModel {
   final String major = "Computer Science";
   final String company = "Tech Software 100";
   final String position = "Mid Flutter Developer";
-  final String email = "shane.min.khant@email.com";
-  final String github = "https://github.com/shaneminkhant";
-  final String linkedin = "https://linkedin.com/in/shaneminkhant";
-  final String twitter = "https://twitter.com/shaneminkhant";
+  final String email = "koschin6@email.com";
+  final String github = "https://github.com/schinmin";
+  final String linkedin = "";
+  final String twitter = "";
   final String bio = "Passionate Flutter developer with expertise in building cross-platform mobile applications. Currently working at Tech Software 100, creating innovative solutions with Flutter.";
   
   final List<SkillModel> skills = [
@@ -20,60 +20,56 @@ class UserModel {
     SkillModel("UI/UX Design", 0.85),
     SkillModel("Git & CI/CD", 0.87),
     SkillModel("Native Android/iOS", 0.80),
+    SkillModel("NodeJs", 0.60),
+    SkillModel("Static Web Development", 0.9)
   ];
 
   final List<ProjectModel> projects = [
+     ProjectModel(
+      title: "ThankBook",
+      description: "Productivity app with task tracking, team collaboration, and real-time updates.",
+      image: "assets/images/thankbook.jpg",
+      technologies: ["Flutter", "Laraval", "MYSQL", "Bloc"],
+      githubUrl: "",
+      liveUrl: "https://play.goolge.com/store/apps/details?id=mm.com.thanks.com.app",
+    ),
     ProjectModel(
       title: "E-Commerce App",
       description: "Full-featured e-commerce mobile app with real-time inventory, payment integration, and admin panel.",
-      image: "assets/images/project1.png",
+      image: "assets/images/ecomerce.jpg",
       technologies: ["Flutter", "Firebase", "Stripe", "Provider"],
-      githubUrl: "https://github.com/shaneminkhant/ecommerce-app",
-      liveUrl: "https://play.google.com/store/apps/details?id=com.ecommerce.app",
+      githubUrl: "https://github.com/schinmin/ecommerce",
+      liveUrl: "",
     ),
+   
     ProjectModel(
-      title: "Task Management System",
-      description: "Productivity app with task tracking, team collaboration, and real-time updates.",
-      image: "assets/images/project2.png",
-      technologies: ["Flutter", "Node.js", "MongoDB", "Bloc"],
-      githubUrl: "https://github.com/shaneminkhant/task-manager",
-      liveUrl: "https://taskmanager-demo.web.app",
-    ),
-    ProjectModel(
-      title: "Weather Forecast App",
-      description: "Beautiful weather app with real-time updates, animations, and location-based forecasts.",
+      title: "Note Taking App",
+      description: "Beautiful NoteTaking app with real-time updates.",
       image: "assets/images/project3.png",
       technologies: ["Flutter", "OpenWeather API", "Geolocator", "GetX"],
-      githubUrl: "https://github.com/shaneminkhant/weather-app",
-      liveUrl: "https://weather-app-demo.web.app",
+      githubUrl: "https://github.com/schinmin/note_taking",
+      liveUrl: "",
     ),
-    ProjectModel(
-      title: "Fitness Tracker",
-      description: "Health and fitness app with workout plans, progress tracking, and social features.",
-      image: "assets/images/project4.png",
-      technologies: ["Flutter", "Firebase", "HealthKit", "Google Fit"],
-      githubUrl: "https://github.com/shaneminkhant/fitness-tracker",
-      liveUrl: null,
-    ),
+   
   ];
 
   final List<ExperienceModel> experiences = [
     ExperienceModel(
       company: "Tech Software 100",
       position: "Mid Flutter Developer",
-      duration: "2023 - Present",
+      duration: "2024 - Present",
       description: "Developing and maintaining cross-platform mobile applications. Leading a team of 3 junior developers. Implementing state management solutions and optimizing app performance.",
     ),
     ExperienceModel(
-      company: "Innovate Solutions",
+      company: "Freelance",
       position: "Junior Flutter Developer",
-      duration: "2021 - 2023",
+      duration: "2022 - 2023",
       description: "Developed multiple Flutter applications for clients. Collaborated with design team to implement UI/UX designs. Integrated RESTful APIs and Firebase services.",
     ),
     ExperienceModel(
       company: "Freelance",
       position: "Mobile App Developer",
-      duration: "2020 - 2021",
+      duration: "2022 - 2022",
       description: "Built custom mobile applications for small businesses. Managed client relationships and delivered projects on time.",
     ),
   ];
@@ -82,7 +78,7 @@ class UserModel {
     EducationModel(
       institution: "University of Computer Studies, Meiktila",
       degree: "Bachelor of Computer Science",
-      duration: "2017 - 2021",
+      duration: "2020 - 2025",
       description: "Focused on software development and computer science fundamentals. Participated in coding competitions and hackathons.",
     ),
   ];

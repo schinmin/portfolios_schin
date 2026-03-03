@@ -165,8 +165,11 @@ class HeaderSection extends StatelessWidget {
                 Column(
                   children: [
                     ElevatedButton(
-                      onPressed: () {
-                        // Download resume
+                      onPressed: () async{
+                         Uri url = Uri.parse("https://drive.google.com/file/d/1J-cSc2ofeYdIH3ONQ5aZdCd3uEmcHLA5/view?usp=drive_link");
+                         if(!await launchUrl(url,mode: LaunchMode.externalApplication)){
+                           throw Exception("Couldn't launch this $url");
+                         }
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xFF6C63FF),

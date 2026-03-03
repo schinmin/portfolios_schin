@@ -97,7 +97,7 @@ class ContactSection extends StatelessWidget {
           context,
           icon: FontAwesomeIcons.github,
           title: 'GitHub',
-          value: 'github.com/shaneminkhant',
+          value: 'github.com/schinmin',
           onTap: () async {
             if (await canLaunch(user.github)) {
               await launch(user.github);
@@ -105,17 +105,6 @@ class ContactSection extends StatelessWidget {
           },
         ),
         SizedBox(height: isMobile ? 15 : 20),
-        _buildContactCard(
-          context,
-          icon: FontAwesomeIcons.linkedin,
-          title: 'LinkedIn',
-          value: 'linkedin.com/in/shaneminkhant',
-          onTap: () async {
-            if (await canLaunch(user.linkedin)) {
-              await launch(user.linkedin);
-            }
-          },
-        ),
       ],
     );
   }

@@ -148,11 +148,11 @@ class AboutSection extends StatelessWidget {
     
     return Column(
       children: [
-        _buildStatCard('3+', 'Years Experience', isMobile),
+        _buildStatCard('2+', 'Years Experience', isMobile),
         SizedBox(height: isMobile ? 15 : 20),
-        _buildStatCard('15+', 'Projects Completed', isMobile),
+        _buildStatCard('2+', 'Projects Completed', isMobile),
         SizedBox(height: isMobile ? 15 : 20),
-        _buildStatCard('10+', 'Happy Clients', isMobile),
+        _buildStatCard('2', 'Happy Clients', isMobile),
         SizedBox(height: isMobile ? 15 : 20),
         _buildStatCard('5+', 'Technologies', isMobile),
       ],

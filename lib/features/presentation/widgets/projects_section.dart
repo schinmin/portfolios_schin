@@ -160,9 +160,10 @@ class ProjectsSection extends StatelessWidget {
                                 _buildProjectButton(
                                   icon: FontAwesomeIcons.github,
                                   onTap: () async {
-                                    if (await canLaunch(project.githubUrl)) {
-                                      await launch(project.githubUrl);
-                                    }
+                                   final Uri url = Uri.parse(project.githubUrl);
+                                   if(!await launchUrl(url,mode: LaunchMode.externalApplication)){
+                                    throw Exception("Couldn't lauch $url");
+                                   }
                                   },
                                   isMobile: isMobile,
                                 ),
@@ -171,9 +172,10 @@ class ProjectsSection extends StatelessWidget {
                                   _buildProjectButton(
                                     icon: FontAwesomeIcons.arrowUpRightFromSquare,
                                     onTap: () async {
-                                      if (await canLaunch(project.liveUrl!)) {
-                                        await launch(project.liveUrl!);
-                                      }
+                                       final Uri url = Uri.parse(project.liveUrl!);
+                                   if(!await launchUrl(url,mode: LaunchMode.externalApplication)){
+                                    throw Exception("Couldn't lauch $url");
+                                   }
                                     },
                                     isMobile: isMobile,
                                   ),
